@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Lesson 7. Html-form.
+    </title>
+    <link rel='stylesheet' href='/css/bootstrap.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='/css/getuserage.css' type='text/css' media='all'>
+</head>
+
+<body>
+    <div id="blokForma" class="container">
+        <h3>Регистрация нового пользователя.</h3>
+        <form class="form-horizontal" id="reguser" action="/registeruser.php" method="POST">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Логин*:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Enter your login" name="login" id="login" required="required" title="login">
+                    <div><span id="helpBlock" class="help-block">Не более 15 символов</span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Пароль*:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Enter your password" name="password" id="password"
+                        required="required" title="password">
+                    <div><span id="helpBlock" class="help-block">Не менее 8 и не более 50 символов. Пароль может содержать следующие символы: русские и латинские символы, цифры, '-', '_'. </span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Электронная почта*:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Enter your email" name="email" id="email"
+                        required="required" title="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Информация о себе*:</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" name="aboutuser" id="aboutuser" rows="5"  placeholder="Enter text about yourself" 
+                    required></textarea>
+                    <div><span id="helpBlock" class="help-block">Не более 500 символов</span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label"></label>
+                <div class="col-sm-9"><span id="helpBlock" class="help-block">* - поля обязательные для заполнения</span></div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-success">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
