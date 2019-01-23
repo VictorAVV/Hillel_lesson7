@@ -3,7 +3,7 @@
 
 function isNumberLength1_5($testString) {
     $pattern = "/^\d{1,5}$/";
-    echo "Test sting: "; 
+    echo "Test string: "; 
     var_dump($testString); 
     echo "<br>";
     echo "Result: ".($result = preg_match($pattern, $testString, $matches))."<br>Array of matches: ";
