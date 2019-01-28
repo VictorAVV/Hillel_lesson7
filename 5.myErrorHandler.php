@@ -44,7 +44,7 @@ function shutdown() {
                 $backlightFin = "</span>";
             }
 
-            echo  $backlightS.htmlentities($string).$backlightFin."";
+            echo  $backlightS.htmlentities($string).$backlightFin;
         } 
         echo "</pre>";
     } else {
